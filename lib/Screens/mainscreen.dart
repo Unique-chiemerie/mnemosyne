@@ -22,8 +22,13 @@ class Mainscreen extends StatelessWidget {
                 ),
               );
             },
-            icon: const Icon(Icons.more_horiz_outlined),
-            style: IconButton.styleFrom(iconSize: screenWidth * 0.07),
+            icon: const Icon(
+              Icons.more_horiz_outlined,
+              color: Colors.black,
+            ),
+            style: IconButton.styleFrom(
+              iconSize: screenWidth * 0.07,
+            ),
           ),
         ],
       ),
