@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mnemosyne/Screens/mainscreen.dart';
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
@@ -8,9 +9,22 @@ class Splashscreen extends StatefulWidget {
 }
 
 class _SplashscreenState extends State<Splashscreen> {
+  nextscreen() {
+    Future.delayed(
+      const Duration(seconds: 10),
+      () => Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const Mainscreen(),
+        ),
+      ),
+    );
+  }
+
   @override
   void initState() {
     super.initState();
+    nextscreen();
   }
 
   @override
