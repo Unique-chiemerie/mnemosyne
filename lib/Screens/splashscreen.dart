@@ -32,20 +32,16 @@ class _SplashscreenState extends State<Splashscreen> {
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      body: Column(
-        children: [
-          Center(
-            child: Container(
-              height: screenHeight * 0.3,
-              width: screenWidth * 0.5,
-              color: Colors.blueAccent.shade400,
-              child: Text(
-                'Logo goes in here',
-                style: TextStyle(fontSize: screenWidth * 0.1),
-              ),
-            ),
-          )
-        ],
+      body: Center(
+        child: Container(
+          height: screenHeight * 0.3,
+          width: screenWidth * 0.5,
+          color: Colors.blueAccent.shade400,
+          child: Text(
+            'Logo goes in here',
+            style: TextStyle(fontSize: screenWidth * 0.1),
+          ),
+        ),
       ),
     );
   }
