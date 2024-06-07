@@ -6,7 +6,7 @@ class Mainscreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final screenHeight = MediaQuery.of(context).size.height;
+    final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
@@ -33,13 +33,28 @@ class Mainscreen extends StatelessWidget {
         ],
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(
-            child: Text(
-              'Home screen',
-              style: TextStyle(fontSize: screenWidth * 0.2),
+          //the placeholder for the quotes card
+          Container(
+            height: screenHeight * 0.3,
+            width: screenWidth * 0.7,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.lightBlue,
             ),
-          )
+          ),
+          SizedBox(
+            height: screenHeight * 0.1,
+          ),
+          //the place holder for the random animated character
+          SizedBox(
+            height: screenHeight * 0.5,
+            width: screenWidth * 0.5,
+            child: const Placeholder(
+              color: Colors.red,
+            ),
+          ),
         ],
       ),
     );
