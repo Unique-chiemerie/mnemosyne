@@ -12,25 +12,19 @@ class Mainscreen extends StatelessWidget {
       appBar: AppBar(
         shadowColor: Colors.transparent,
         backgroundColor: Colors.transparent,
-        actions: [
-          IconButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Sidebarscreen(),
-                ),
-              );
-            },
-            icon: const Icon(
-              Icons.more_horiz_outlined,
-              color: Colors.black,
-            ),
-            style: IconButton.styleFrom(
-              iconSize: screenWidth * 0.07,
-            ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const Sidebarscreen(),
+              ),
+            );
+          },
+          icon: const Icon(
+            Icons.thumb_up_rounded,
+            color: Colors.blueAccent,
           ),
-        ],
+        ),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
