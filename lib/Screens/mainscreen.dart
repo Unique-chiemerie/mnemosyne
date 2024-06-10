@@ -31,12 +31,14 @@ class Mainscreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           //the placeholder for the quotes card
-          Container(
-            height: screenHeight * 0.1,
-            width: screenWidth * 0.9,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.lightBlue,
+          Center(
+            child: Container(
+              height: screenHeight * 0.15,
+              width: screenWidth * 0.9,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.lightBlue,
+              ),
             ),
           ),
           SizedBox(
