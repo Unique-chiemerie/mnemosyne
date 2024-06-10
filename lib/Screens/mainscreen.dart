@@ -33,11 +33,12 @@ class Mainscreen extends StatelessWidget {
         ],
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           //the placeholder for the quotes card
           Container(
             height: screenHeight * 0.1,
-            width: screenWidth * 0.75,
+            width: screenWidth * 0.9,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               color: Colors.lightBlue,
@@ -49,7 +50,7 @@ class Mainscreen extends StatelessWidget {
           //the place holder for the random animated character
           SizedBox(
             height: screenHeight * 0.4,
-            width: screenWidth * 0.8,
+            width: screenWidth * 0.9,
             child: const Placeholder(
               color: Colors.red,
             ),
