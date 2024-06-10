@@ -21,7 +21,7 @@ class Mainscreen extends StatelessWidget {
             );
           },
           icon: Icon(
-            Icons.thumb_up_rounded,
+            Icons.list,
             color: Colors.blueAccent,
             size: screenHeight * 0.05,
           ),
