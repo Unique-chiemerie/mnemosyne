@@ -20,9 +20,10 @@ class Mainscreen extends StatelessWidget {
               ),
             );
           },
-          icon: const Icon(
+          icon: Icon(
             Icons.thumb_up_rounded,
             color: Colors.blueAccent,
+            size: screenHeight * 0.05,
           ),
         ),
       ),
