@@ -34,6 +34,9 @@ class _SplashscreenState extends State<Splashscreen> {
     return Scaffold(
       body: Column(
         children: [
+          SizedBox(
+            height: screenHeight * 0.3,
+          ),
           //the icon
           Center(
             child: SizedBox(
