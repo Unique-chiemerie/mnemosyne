@@ -40,7 +40,7 @@ class _SplashscreenState extends State<Splashscreen> {
           //the icon
           Center(
             child: SizedBox(
-              height: screenHeight * 0.3,
+              height: screenHeight * 0.2,
               width: screenWidth * 0.5,
               child: Image.asset('images/main_logo.png'),
             ),
