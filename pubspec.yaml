@@ -65,6 +65,7 @@ flutter:
     - images/alternate_logo.png
     - images/more_logo.png
     - assets/thinking_man.json
+    - assets/intro_anim.json
      
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -52,7 +52,7 @@ class Mainscreen extends StatelessWidget {
               child: Center(
                 child: Text(
                   displayRandom,
-                  style: TextStyle(fontSize: screenWidth * 0.2),
+                  style: TextStyle(fontSize: screenWidth * 0.05),
                 ),
               ),
             ),

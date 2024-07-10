@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:mnemosyne/Screens/mainscreen.dart';
 
 class Splashscreen extends StatefulWidget {
@@ -42,7 +43,7 @@ class _SplashscreenState extends State<Splashscreen> {
             child: SizedBox(
               height: screenHeight * 0.2,
               width: screenWidth * 0.5,
-              child: Image.asset('images/alternate_logo.png'),
+              child: Lottie.asset('assets/intro_anim.json'),
             ),
           ),
           //Text goes here
