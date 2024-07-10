@@ -42,7 +42,7 @@ class _SplashscreenState extends State<Splashscreen> {
             child: SizedBox(
               height: screenHeight * 0.2,
               width: screenWidth * 0.5,
-              child: Image.asset('images/main_logo.png'),
+              child: Image.asset('images/alternate_logo.png'),
             ),
           ),
           //Text goes here

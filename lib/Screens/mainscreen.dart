@@ -20,11 +20,7 @@ class Mainscreen extends StatelessWidget {
               ),
             );
           },
-          icon: Icon(
-            Icons.list,
-            color: Colors.blueAccent,
-            size: screenHeight * 0.05,
-          ),
+          icon: Image.asset('images\more_logo.png'),
         ),
       ),
       body: Column(
@@ -32,10 +28,13 @@ class Mainscreen extends StatelessWidget {
         children: [
           //the placeholder for the quotes card
           Center(
-            child: SizedBox(
+            child: Container(
               height: screenHeight * 0.15,
               width: screenWidth * 0.9,
-            child: ,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.lightBlue,
+              ),
             ),
           ),
           SizedBox(
