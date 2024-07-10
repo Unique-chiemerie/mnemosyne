@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:mnemosyne/Screens/sidebarscreen.dart';
 import 'package:lottie/lottie.dart';
@@ -9,6 +11,17 @@ class Mainscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
+    List words = [
+      'Be brave',
+      'Be strong',
+      'Be courageous',
+      'Fear God',
+      'God cares for you',
+      'Study the word'
+    ];
+    int rando = Random().nextInt(6);
+    final displayRandom = words[rando];
+
     return Scaffold(
       appBar: AppBar(
         shadowColor: Colors.transparent,
@@ -36,6 +49,12 @@ class Mainscreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.lightBlue,
               ),
+              child: Center(
+                child: Text(
+                  displayRandom,
+                  style: TextStyle(fontSize: screenWidth * 0.2),
+                ),
+              ),
             ),
           ),
           SizedBox(
@@ -45,7 +64,7 @@ class Mainscreen extends StatelessWidget {
           SizedBox(
             height: screenHeight * 0.4,
             width: screenWidth * 0.9,
-            child: Lottie.asset('assets\thinking_man.json'),
+            child: Lottie.asset('assets/thinking_man.json'),
           ),
         ],
       ),
