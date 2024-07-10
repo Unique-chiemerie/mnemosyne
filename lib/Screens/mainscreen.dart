@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mnemosyne/Screens/sidebarscreen.dart';
+import 'package:lottie/lottie.dart';
 
 class Mainscreen extends StatelessWidget {
   const Mainscreen({super.key});
@@ -20,7 +21,7 @@ class Mainscreen extends StatelessWidget {
               ),
             );
           },
-          icon: Image.asset('images\more_logo.png'),
+          icon: Image.asset('images/more_logo.png'),
         ),
       ),
       body: Column(
@@ -44,9 +45,7 @@ class Mainscreen extends StatelessWidget {
           SizedBox(
             height: screenHeight * 0.4,
             width: screenWidth * 0.9,
-            child: const Placeholder(
-              color: Colors.red,
-            ),
+            child: Lottie.asset('assets\thinking_man.json'),
           ),
         ],
       ),
